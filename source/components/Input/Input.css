@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  max-width: 60%;
+}
+
+.icon {
+  color: #cfd8dc;
+  height: 28px;
+  position: absolute;
+  transform: translate(52px, 24px);
+  width: 28px;
+}
+
+.iconInvalid {
+  composes: icon;
+  color: #ff0000;
+}
+
+.input {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.33);
+  border: 0;
+  color: #607d8b;
+  font-size: 28px;
+  font-weight: lighter;
+  height: 76px;
+  margin: 0 24px 22px 24px;
+  padding: 0 24px 0 76px;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.input input::placeholder {
+  color: #cfd8dc;
+}
+
+.inputInvalid {
+  composes: input;
+  color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .input {
+    padding: 0 14px;
+    height: 46px;
+    font-size: 18px;
+  }
+}

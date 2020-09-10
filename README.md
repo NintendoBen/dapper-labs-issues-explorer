@@ -1,3 +1,18 @@
+# Simple Instructions To Run The App
+
+Simply pull down the repository and run:
+
+- npm install
+- npm start
+
+If you want to build the project for deployment, run:
+
+- npm run build
+
+and deploy the build folder.
+
+The index.html in the build folder should be runnable off of your file-system as well.
+
 # Issues Explorer (front end)
 
 > Please feel free to ask questions!

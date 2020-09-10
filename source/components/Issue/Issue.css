@@ -1,0 +1,86 @@
+.issue {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.33);
+  background-color: #ffffff;
+  color: #607d8b;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  height: 177px;
+  overflow: hidden;
+  position: absolute;
+  width: 320px;
+}
+
+.icon {
+  color: #1a237e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  margin: 8px;
+}
+
+.titleContainer {
+  background-color: #3f51b5;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 18px;
+  /* padding: 24px; */
+  margin: 24px;
+  /* flex: 0 0; */
+  white-space: initial;
+  overflow: hidden;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.body {
+  color: #607d8b;
+  flex: 1 1;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  margin: 12px;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+.noBody {
+  composes: body;
+  color: #cfd8dc;
+}
+
+.labels {
+  margin: 0 12px 12px 12px;
+  flex: 0 0;
+}
+
+.label {
+  background-color: #e91e63;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 9px;
+  font-weight: lighter;
+  line-height: 0px;
+  margin: 0 12px 0 0;
+  max-width: 100px;
+  min-height: 10px;
+  overflow: hidden;
+  padding: 4px 8px 4px 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.label::before {
+  content: "•";
+  font-size: 26px;
+  margin: 0 0 0 -8px;
+  position: relative;
+  top: 4px;
+}

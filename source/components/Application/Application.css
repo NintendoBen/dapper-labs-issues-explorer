@@ -1,0 +1,23 @@
+.application {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0px, 0vh);
+  transition: transform 500ms ease-in-out 0ms;
+}
+
+.search {
+  composes: application;
+}
+
+.results {
+  composes: application;
+  transform: translate(0px, -90vh);
+  transition: transform 500ms ease-in-out 250ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .results {
+    transform: translate(0px, -80vh);
+  }
+}

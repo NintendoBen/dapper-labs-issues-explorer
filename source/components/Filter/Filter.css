@@ -1,0 +1,19 @@
+.filter {
+  display: flex;
+  position: relative;
+  margin: 0px 0 24px 0;
+}
+
+.item {
+  color: #607d8b;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.itemSelected {
+  composes: item;
+  color: #e91e63;
+}
